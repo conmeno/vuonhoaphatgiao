@@ -1,23 +1,30 @@
 //
 //  AppDelegate.swift
-//  vuonhoaphatgiao
+//  DestinetApp
 //
-//  Created by Phuong Nguyen on 6/17/15.
-//  Copyright (c) 2015 Phuong Nguyen. All rights reserved.
+//  Created by Phuong Nguyen on 5/4/15.
+//  Copyright (c) 2015 Destino. All rights reserved.
 //
 
 import UIKit
+//import iAd
+ 
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    //var UIiAd: ADBannerView = ADBannerView()
+    
+var conmeno=""
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        AdTapsy.startSession("55adef9de4b05507958fa288");
         return true
     }
+ 
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
