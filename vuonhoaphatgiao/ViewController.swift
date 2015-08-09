@@ -51,6 +51,8 @@ class ViewController: UIViewController,UIWebViewDelegate, VungleSDKDelegate,  Ch
     
     
     @IBAction func MoreAppClick(sender: AnyObject) {
+        var barsLink : String = "itms-apps://itunes.apple.com/ca/artist/phuong-nguyen/id1004963752"
+        UIApplication.sharedApplication().openURL(NSURL(string: barsLink)!)
     }
     //end ad panel
     
