@@ -22,6 +22,8 @@ class ViewController: UIViewController,UIWebViewDelegate, VungleSDKDelegate,  Ch
     
     
     //ad panel
+    @IBOutlet weak var textViewAdInfo: UITextView!
+    
     var AdNumber = 1
     @IBOutlet weak var AdView: UIView!
     
@@ -68,8 +70,11 @@ class ViewController: UIViewController,UIWebViewDelegate, VungleSDKDelegate,  Ch
         override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib. 
+            let dev = UIDevice.currentDevice().identifierForVendor.UUIDString
             
-            
+          //  UDIDlb.text = dev
+            textViewAdInfo?.text = dev
+            println(dev)
         AdView.hidden = true
         let requestURL = NSURL(string:WebURL)
         let request = NSURLRequest(URL: requestURL!)

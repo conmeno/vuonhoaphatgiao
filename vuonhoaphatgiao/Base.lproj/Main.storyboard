@@ -71,6 +71,12 @@
                                             <action selector="MoreAppClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rcY-DT-tb2"/>
                                         </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QMu-v1-oA7">
+                                        <rect key="frame" x="8" y="8" width="233" height="76"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.84026289429264778" green="1" blue="0.65325542970394379" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -135,6 +141,7 @@
                     </view>
                     <connections>
                         <outlet property="AdView" destination="CiO-rB-27y" id="kJr-jI-7ng"/>
+                        <outlet property="textViewAdInfo" destination="QMu-v1-oA7" id="Tyy-Pz-lWq"/>
                         <outlet property="webView1" destination="8Jv-hh-VZC" id="tyT-Zz-DaA"/>
                     </connections>
                 </viewController>
