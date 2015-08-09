@@ -32,23 +32,28 @@ class ViewController: UIViewController,UIWebViewDelegate, VungleSDKDelegate,  Ch
     @IBAction func ShowAdClick(sender: AnyObject) {
       
         
-        Chartboost.showInterstitial("Home" + String(AdNumber))
-        //Chartboost.showMoreApps("Home")
-        //Chartboost.showRewardedVideo("Home")
-        vungleSdk.playAd(self, error: nil)
-        AdNumber++
-         AdColony.playVideoAdForZone("vzd576c4633e5544b8aa", withDelegate: nil)
-        if(AdNumber > 7)
-        {
-        AdView.backgroundColor = UIColor.redColor()
-        }
-        println(AdNumber)
+      showAds()
     }
     
     @IBAction func SettingClick(sender: AnyObject) {
         AdView.hidden = false
     }
     
+    func showAds()
+    {
+    
+        Chartboost.showInterstitial("Home" + String(AdNumber))
+        //Chartboost.showMoreApps("Home")
+        //Chartboost.showRewardedVideo("Home")
+        vungleSdk.playAd(self, error: nil)
+        AdNumber++
+        AdColony.playVideoAdForZone("vzd576c4633e5544b8aa", withDelegate: nil)
+        if(AdNumber > 7)
+        {
+            AdView.backgroundColor = UIColor.redColor()
+        }
+        println(AdNumber)
+    }
     
     @IBAction func MoreAppClick(sender: AnyObject) {
         var barsLink : String = "itms-apps://itunes.apple.com/ca/artist/phuong-nguyen/id1004963752"
