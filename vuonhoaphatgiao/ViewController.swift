@@ -31,6 +31,11 @@ class ViewController: UIViewController,UIWebViewDelegate, VungleSDKDelegate,  Ch
         AdView.hidden = true
     }
     
+   
+    @IBAction func СloseOutsite(sender: AnyObject) {
+          textViewAdInfo.hidden = false
+    }
+    
     @IBAction func ShowAdClick(sender: AnyObject) {
       
         
@@ -69,12 +74,14 @@ class ViewController: UIViewController,UIWebViewDelegate, VungleSDKDelegate,  Ch
       //public var NotifyURL=""
         override func viewDidLoad() {
         super.viewDidLoad()
+            textViewAdInfo.hidden = true
         // Do any additional setup after loading the view, typically from a nib. 
             let dev = UIDevice.currentDevice().identifierForVendor.UUIDString
-            
+            let des = UIDevice.currentDevice().identifierForVendor.description
           //  UDIDlb.text = dev
             textViewAdInfo?.text = dev
             println(dev)
+            println(des)
         AdView.hidden = true
         let requestURL = NSURL(string:WebURL)
         let request = NSURLRequest(URL: requestURL!)

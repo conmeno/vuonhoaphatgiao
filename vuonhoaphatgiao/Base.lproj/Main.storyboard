@@ -48,16 +48,6 @@
                                             <action selector="ShowAdClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t40-qH-12E"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9n4-dh-WnH">
-                                        <rect key="frame" x="545" y="8" width="40" height="30"/>
-                                        <state key="normal" title="Close">
-                                            <color key="titleColor" red="1" green="0.17801721400000001" blue="0.39117623950000002" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="closePanelClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lVt-gx-6ub"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lc-Qw-hfA">
                                         <rect key="frame" x="255" y="34" width="91" height="30"/>
                                         <constraints>
@@ -72,11 +62,22 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QMu-v1-oA7">
-                                        <rect key="frame" x="8" y="8" width="233" height="76"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="8" y="8" width="338" height="80"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9n4-dh-WnH">
+                                        <rect key="frame" x="545" y="8" width="40" height="30"/>
+                                        <state key="normal" title="Close">
+                                            <color key="titleColor" red="1" green="0.17801721400000001" blue="0.39117623950000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closePanelClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lVt-gx-6ub"/>
+                                            <action selector="СloseOutsite:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="xph-4F-7e0"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.84026289429264778" green="1" blue="0.65325542970394379" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
