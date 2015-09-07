@@ -11,7 +11,7 @@ import UIKit
  
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, ChartboostDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     //var UIiAd: ADBannerView = ADBannerView()
@@ -20,22 +20,7 @@ var conmeno=""
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        
-        //AdTapsy.startSession("55adef9de4b05507958fa288");
-        
-        Chartboost.startWithAppId("55afa81d04b0167f0acea7ee", appSignature: "abe69787ea36ddaed35309762c5a0b493c2fb83f", delegate: self)
-        
-        //vungle
-        // Override point for customization after application launch.
-        var appID = "1007059414"
-        var sdk = VungleSDK.sharedSDK()
-        // start vungle publisher library
-        sdk.startWithAppId(appID)
-        sdk.setLoggingEnabled(true)
-        
-        //end vung le
-//adcolony\
-        AdColony.configureWithAppID("appb25b1e352e744ed18f", zoneIDs: ["vzd576c4633e5544b8aa"], delegate: nil, logging: true)
+       
         
         return true
     }

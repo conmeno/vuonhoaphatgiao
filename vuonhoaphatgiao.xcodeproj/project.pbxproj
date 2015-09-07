@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		849BC53E1B75C615009DEF5D /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849BC53D1B75C615009DEF5D /* Chartboost.framework */; };
-		84A4DFEC1B7736A600BA21C5 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A4DFEB1B7736A600BA21C5 /* AdColony.framework */; };
-		84A4DFF61B7736B400BA21C5 /* __vungle.db in Resources */ = {isa = PBXBuildFile; fileRef = 84A4DFEF1B7736B400BA21C5 /* __vungle.db */; };
-		84A4DFF71B7736B400BA21C5 /* vg_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A4DFF01B7736B400BA21C5 /* vg_close.png */; };
-		84A4DFF81B7736B400BA21C5 /* vg_cta.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A4DFF11B7736B400BA21C5 /* vg_cta.png */; };
-		84A4DFF91B7736B400BA21C5 /* vg_mute_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A4DFF21B7736B400BA21C5 /* vg_mute_off.png */; };
-		84A4DFFA1B7736B400BA21C5 /* vg_mute_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A4DFF31B7736B400BA21C5 /* vg_mute_on.png */; };
-		84A4DFFB1B7736B400BA21C5 /* vg_privacy.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A4DFF41B7736B400BA21C5 /* vg_privacy.png */; };
-		84A4DFFC1B7736B400BA21C5 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A4DFF51B7736B400BA21C5 /* VungleSDK.framework */; };
 		84A6285B1B5F973600BC19D5 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A628591B5F973600BC19D5 /* libsqlite3.0.dylib */; };
 		84A6285F1B5F974A00BC19D5 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6285D1B5F974A00BC19D5 /* EventKit.framework */; };
 		84A628601B5F974A00BC19D5 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A6285E1B5F974A00BC19D5 /* EventKitUI.framework */; };
@@ -40,13 +31,13 @@
 		84A628861B5F985D00BC19D5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A628851B5F985D00BC19D5 /* WebKit.framework */; };
 		84A628881B5F986200BC19D5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A628871B5F986200BC19D5 /* AdSupport.framework */; };
 		84A6288A1B5F999500BC19D5 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A628891B5F999500BC19D5 /* libz.dylib */; };
+		84A7FF1D1B9D9210009471E9 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A7FF1C1B9D9210009471E9 /* GoogleMobileAds.framework */; };
 		9685E2AC1B315F3000C40D3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9685E2AB1B315F3000C40D3F /* AppDelegate.swift */; };
 		9685E2AE1B315F3000C40D3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9685E2AD1B315F3000C40D3F /* ViewController.swift */; };
 		9685E2B11B315F3000C40D3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9685E2AF1B315F3000C40D3F /* Main.storyboard */; };
 		9685E2B31B315F3000C40D3F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9685E2B21B315F3000C40D3F /* Images.xcassets */; };
 		9685E2B61B315F3000C40D3F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9685E2B41B315F3000C40D3F /* LaunchScreen.xib */; };
 		9685E2C21B315F3000C40D3F /* vuonhoaphatgiaoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9685E2C11B315F3000C40D3F /* vuonhoaphatgiaoTests.swift */; };
-		9685E2CC1B315F5300C40D3F /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9685E2CB1B315F5300C40D3F /* iAd.framework */; };
 		96FDF9AD1B31601E00E57F37 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FDF9AC1B31601E00E57F37 /* Variable.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,16 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		849BC53D1B75C615009DEF5D /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
 		849BC53F1B75CA00009DEF5D /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
-		84A4DFEB1B7736A600BA21C5 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
-		84A4DFEF1B7736B400BA21C5 /* __vungle.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = __vungle.db; sourceTree = "<group>"; };
-		84A4DFF01B7736B400BA21C5 /* vg_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_close.png; sourceTree = "<group>"; };
-		84A4DFF11B7736B400BA21C5 /* vg_cta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_cta.png; sourceTree = "<group>"; };
-		84A4DFF21B7736B400BA21C5 /* vg_mute_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_off.png; sourceTree = "<group>"; };
-		84A4DFF31B7736B400BA21C5 /* vg_mute_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_on.png; sourceTree = "<group>"; };
-		84A4DFF41B7736B400BA21C5 /* vg_privacy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_privacy.png; sourceTree = "<group>"; };
-		84A4DFF51B7736B400BA21C5 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
 		84A628581B5F964300BC19D5 /* vuonhoa-Bridging-header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "vuonhoa-Bridging-header.h"; sourceTree = "<group>"; };
 		84A628591B5F973600BC19D5 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		84A6285A1B5F973600BC19D5 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -97,6 +79,7 @@
 		84A628851B5F985D00BC19D5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		84A628871B5F986200BC19D5 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		84A628891B5F999500BC19D5 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		84A7FF1C1B9D9210009471E9 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		9685E2A61B315F3000C40D3F /* vuonhoaphatgiao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vuonhoaphatgiao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9685E2AA1B315F3000C40D3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9685E2AB1B315F3000C40D3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +90,6 @@
 		9685E2BB1B315F3000C40D3F /* vuonhoaphatgiaoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vuonhoaphatgiaoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9685E2C01B315F3000C40D3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9685E2C11B315F3000C40D3F /* vuonhoaphatgiaoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vuonhoaphatgiaoTests.swift; sourceTree = "<group>"; };
-		9685E2CB1B315F5300C40D3F /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		96FDF9AC1B31601E00E57F37 /* Variable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +105,6 @@
 				84A628701B5F97E700BC19D5 /* AudioToolbox.framework in Frameworks */,
 				84A628721B5F97FC00BC19D5 /* AVFoundation.framework in Frameworks */,
 				84A628741B5F980900BC19D5 /* CFNetwork.framework in Frameworks */,
-				84A4DFEC1B7736A600BA21C5 /* AdColony.framework in Frameworks */,
 				84A628681B5F97AF00BC19D5 /* CoreAudio.framework in Frameworks */,
 				84A6286B1B5F97AF00BC19D5 /* CoreLocation.framework in Frameworks */,
 				84A6286D1B5F97AF00BC19D5 /* CoreTelephony.framework in Frameworks */,
@@ -138,12 +119,10 @@
 				84A6285B1B5F973600BC19D5 /* libsqlite3.0.dylib in Frameworks */,
 				84A6288A1B5F999500BC19D5 /* libz.dylib in Frameworks */,
 				84A628821B5F984E00BC19D5 /* Social.framework in Frameworks */,
-				84A4DFFC1B7736B400BA21C5 /* VungleSDK.framework in Frameworks */,
 				84A628841B5F985600BC19D5 /* StoreKit.framework in Frameworks */,
+				84A7FF1D1B9D9210009471E9 /* GoogleMobileAds.framework in Frameworks */,
 				84A628861B5F985D00BC19D5 /* WebKit.framework in Frameworks */,
 				84A628881B5F986200BC19D5 /* AdSupport.framework in Frameworks */,
-				849BC53E1B75C615009DEF5D /* Chartboost.framework in Frameworks */,
-				9685E2CC1B315F5300C40D3F /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,35 +136,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		84A4DFED1B7736B300BA21C5 /* VungleSDK.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				84A4DFEE1B7736B400BA21C5 /* Resources */,
-				84A4DFF51B7736B400BA21C5 /* VungleSDK.framework */,
-			);
-			path = VungleSDK.embeddedframework;
-			sourceTree = "<group>";
-		};
-		84A4DFEE1B7736B400BA21C5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				84A4DFEF1B7736B400BA21C5 /* __vungle.db */,
-				84A4DFF01B7736B400BA21C5 /* vg_close.png */,
-				84A4DFF11B7736B400BA21C5 /* vg_cta.png */,
-				84A4DFF21B7736B400BA21C5 /* vg_mute_off.png */,
-				84A4DFF31B7736B400BA21C5 /* vg_mute_on.png */,
-				84A4DFF41B7736B400BA21C5 /* vg_privacy.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		9685E29D1B315F3000C40D3F = {
 			isa = PBXGroup;
 			children = (
-				84A4DFED1B7736B300BA21C5 /* VungleSDK.embeddedframework */,
-				84A4DFEB1B7736A600BA21C5 /* AdColony.framework */,
+				84A7FF1C1B9D9210009471E9 /* GoogleMobileAds.framework */,
 				849BC53F1B75CA00009DEF5D /* libcommonCrypto.dylib */,
-				849BC53D1B75C615009DEF5D /* Chartboost.framework */,
 				84A628891B5F999500BC19D5 /* libz.dylib */,
 				84A628871B5F986200BC19D5 /* AdSupport.framework */,
 				84A628851B5F985D00BC19D5 /* WebKit.framework */,
@@ -212,7 +167,6 @@
 				84A628591B5F973600BC19D5 /* libsqlite3.0.dylib */,
 				84A6285A1B5F973600BC19D5 /* libsqlite3.dylib */,
 				84A628581B5F964300BC19D5 /* vuonhoa-Bridging-header.h */,
-				9685E2CB1B315F5300C40D3F /* iAd.framework */,
 				9685E2A81B315F3000C40D3F /* vuonhoaphatgiao */,
 				9685E2BE1B315F3000C40D3F /* vuonhoaphatgiaoTests */,
 				9685E2A71B315F3000C40D3F /* Products */,
@@ -348,14 +302,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A4DFF91B7736B400BA21C5 /* vg_mute_off.png in Resources */,
 				9685E2B11B315F3000C40D3F /* Main.storyboard in Resources */,
 				9685E2B61B315F3000C40D3F /* LaunchScreen.xib in Resources */,
-				84A4DFF61B7736B400BA21C5 /* __vungle.db in Resources */,
-				84A4DFFA1B7736B400BA21C5 /* vg_mute_on.png in Resources */,
-				84A4DFFB1B7736B400BA21C5 /* vg_privacy.png in Resources */,
-				84A4DFF81B7736B400BA21C5 /* vg_cta.png in Resources */,
-				84A4DFF71B7736B400BA21C5 /* vg_close.png in Resources */,
 				9685E2B31B315F3000C40D3F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,18 +454,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AdTapsy/AdNetworks",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/VungleSDK.embeddedframework",
 				);
 				INFOPLIST_FILE = vuonhoaphatgiao/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AdTapsy/AdNetworks/applovin-ios-sdk",
-					"$(PROJECT_DIR)/AdTapsy/AdNetworks/InMobi-iOS-SDK/Libs",
-					"$(PROJECT_DIR)/AdTapsy",
 					"$(SDKROOT)/usr/lib/system",
 				);
 				OTHER_LDFLAGS = "-ObjC";
@@ -536,18 +479,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AdTapsy/AdNetworks",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/VungleSDK.embeddedframework",
 				);
 				INFOPLIST_FILE = vuonhoaphatgiao/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AdTapsy/AdNetworks/applovin-ios-sdk",
-					"$(PROJECT_DIR)/AdTapsy/AdNetworks/InMobi-iOS-SDK/Libs",
-					"$(PROJECT_DIR)/AdTapsy",
 					"$(SDKROOT)/usr/lib/system",
 				);
 				OTHER_LDFLAGS = "-ObjC";

@@ -7,60 +7,19 @@
 //
 
 import UIKit
-import iAd
+import GoogleMobileAds
 
-
-class ViewController: UIViewController,UIWebViewDelegate, VungleSDKDelegate,  ChartboostDelegate{
+class ViewController: UIViewController,UIWebViewDelegate,GADBannerViewDelegate{
     
-     //var UIiAd:, ADBannerView = ADBannerView()
     
-    @IBOutlet weak var adShow: UIButton!
+    @IBOutlet weak var gBannerView: GADBannerView!
+    
+    //@IBOutlet weak var adShow: UIButton!
     @IBOutlet weak var webView1: UIWebView!
         var WebURL = Varialbes.Static.URL
- 
-    var vungleSdk = VungleSDK.sharedSDK()
-    
-    
     //ad panel
-    @IBOutlet weak var textViewAdInfo: UITextView!
-    
-    var AdNumber = 1
-    @IBOutlet weak var AdView: UIView!
-    
-    @IBAction func closePanelClick(sender: AnyObject) {
-        AdView.hidden = true
-    }
-    
+    //@IBOutlet weak var textViewAdInfo: UITextView!
    
-    @IBAction func СloseOutsite(sender: AnyObject) {
-          textViewAdInfo.hidden = false
-    }
-    
-    @IBAction func ShowAdClick(sender: AnyObject) {
-      
-        
-      showAds()
-    }
-    
-    @IBAction func SettingClick(sender: AnyObject) {
-        AdView.hidden = false
-    }
-    
-    func showAds()
-    {
-    
-        Chartboost.showInterstitial("Home" + String(AdNumber))
-        //Chartboost.showMoreApps("Home")
-        //Chartboost.showRewardedVideo("Home")
-        vungleSdk.playAd(self, error: nil)
-        AdNumber++
-        AdColony.playVideoAdForZone("vzd576c4633e5544b8aa", withDelegate: nil)
-        if(AdNumber > 7)
-        {
-            AdView.backgroundColor = UIColor.redColor()
-        }
-        println(AdNumber)
-    }
     
     @IBAction func MoreAppClick(sender: AnyObject) {
         var barsLink : String = "itms-apps://itunes.apple.com/ca/artist/phuong-nguyen/id1004963752"
@@ -68,132 +27,44 @@ class ViewController: UIViewController,UIWebViewDelegate, VungleSDKDelegate,  Ch
     }
     //end ad panel
     
-    
-    
-    
       //public var NotifyURL=""
         override func viewDidLoad() {
         super.viewDidLoad()
-            textViewAdInfo.hidden = true
-        // Do any additional setup after loading the view, typically from a nib. 
-            let dev = UIDevice.currentDevice().identifierForVendor.UUIDString
-            let des = UIDevice.currentDevice().identifierForVendor.description
-          //  UDIDlb.text = dev
-            textViewAdInfo?.text = dev
-            println(dev)
-            println(des)
-        AdView.hidden = true
+           // textViewAdInfo.hidden = true
+ 
+       
         let requestURL = NSURL(string:WebURL)
         let request = NSURLRequest(URL: requestURL!)
         webView1.loadRequest(request)
         webView1.delegate = self
             
-        //show chartboost
-        Chartboost.showInterstitial("Home")
-        //show vungle 
-            vungleSdk.delegate = self
-        vungleSdk.playAd(self, error: nil)
-            //adcolony           
-        AdColony.playVideoAdForZone("vzd576c4633e5544b8aa", withDelegate: nil)
+            ShowAdmobBanner()
             
     }
 
- 
+    func ShowAdmobBanner()
+    {
+        //gBannerView = GADBannerView(frame: CGRectMake(0, 20 , 320, 50))
+        gBannerView?.adUnitID = "ca-app-pub-7800586925586997/3166781265"
+        gBannerView?.delegate = self
+        gBannerView?.rootViewController = self
+        //self.view.addSubview(bannerView!)
+        //adViewHeight = bannerView!.frame.size.height
+        var request = GADRequest()
+        request.testDevices = [kGADSimulatorID , "8c5c2bcfed6ce10d63a11d9a591e15c2"];
+        gBannerView?.loadRequest(request)
+        gBannerView?.hidden = true
+        
+    }
     
        override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    //vungle
-    
-    
-    // Play an ad using default settings
-    @IBAction func playAd(sender: AnyObject) {
-        var sdk = VungleSDK.sharedSDK()
-        sdk.delegate = self
-        sdk.playAd(self, error: nil)
-    }
-    func vungleSDKwillCloseAdWithViewInfo(viewInfo: [NSObject : AnyObject]!, willPresentProductSheet: Bool) {
-        println(viewInfo)
-    }
-    
-    //end vungle
+ 
 
-    
-    //ad
-    // Add delegate functions
-//    func adtapsyDidClickedAd() {
-//        println("***adtapsyDidClickedAd***");
-//    }
-//    
-//    func adtapsyDidFailedToShowAd() {
-//        println("***adtapsyDidFailedToShowAd***");
-//    }
-//    
-//    func adtapsyDidShowAd() {
-//        println("***adtapsyDidShowAd***");
-//    }
-//    
-//    func adtapsyDidSkippedAd() {
-//        println("***adtapsyDidSkippedAd***");
-//    }
-//    
-//    func adtapsyDidCachedAd() {
-//        println("***adtapsyDidCachedAd***");
-//    }
-    //end ad
-    
-    //begin iad
-    // 1
-//    func appdelegate() -> AppDelegate {
-//        return UIApplication.sharedApplication().delegate as AppDelegate
-//    }
-//    
-//    // 2
-//    override func viewWillAppear(animated: Bool) {
-//        var SH = UIScreen.mainScreen().bounds.height
-//        
-//        UIiAd = self.appdelegate().UIiAd
-//        UIiAd.frame = CGRectMake(0, SH - 50, 0, 0)
-//        self.view.addSubview(UIiAd)
-//        println("khoi tao ")
-//        UIiAd.alpha = 0
-//        UIiAd.delegate = self
-//    }
-//    
-//    // 3
-//    override func viewWillDisappear(animated: Bool) {
-//        UIiAd.delegate = nil
-//        UIiAd.removeFromSuperview()
-//    }
-//    
-//    //   bannerViewWillLoadAd
-//    func bannerViewWillLoadAd(banner: ADBannerView!) {
-//        println("will load ")
-//    }
-//    
-//    
-//    // 4
-//    func bannerViewDidLoadAd(banner: ADBannerView!) {
-//        UIView.beginAnimations(nil, context: nil)
-//        UIView.setAnimationDuration(1)
-//        UIiAd.alpha = 1
-//        UIView.commitAnimations()
-//        println("da load ")
-//    }
-//    
-//    // 5
-//    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
-//        UIView.beginAnimations(nil, context: nil)
-//        UIView.setAnimationDuration(0)
-//        UIiAd.alpha = 1
-//        UIView.commitAnimations()
-//        println("fail load ")
-//        
-//    }
-    //end iad
-
+   
     //web view delegate
     func webView(webView: UIWebView!, didFailLoadWithError error: NSError!) {
         
@@ -219,15 +90,40 @@ class ViewController: UIViewController,UIWebViewDelegate, VungleSDKDelegate,  Ch
         let currentURL : String = (webView1.request?.URL.absoluteString)!
                  println(currentURL)
         
-//        if (AdTapsy.isAdReadyToShow()) {
-//            println("Ad is ready to be shown");
-//            AdTapsy.showInterstitial(self);
-//            
-//        } else {
-//            println("Ad is not ready to be shown");
-//        }
-
+    }
+    
+    //admob delegate
+    
+    //admob delegate
+    //GADBannerViewDelegate
+    func adViewDidReceiveAd(view: GADBannerView!) {
+        println("adViewDidReceiveAd:\(view)");
+        gBannerView?.hidden = false
         
+        //relayoutViews()
+    }
+    
+    func adView(view: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
+        println("\(view) error:\(error)")
+        gBannerView?.hidden = false
+        //relayoutViews()
+    }
+    
+    func adViewWillPresentScreen(adView: GADBannerView!) {
+        println("adViewWillPresentScreen:\(adView)")
+        gBannerView?.hidden = false
+        
+        //relayoutViews()
+    }
+    
+    func adViewWillLeaveApplication(adView: GADBannerView!) {
+        println("adViewWillLeaveApplication:\(adView)")
+    }
+    
+    func adViewWillDismissScreen(adView: GADBannerView!) {
+        println("adViewWillDismissScreen:\(adView)")
+        
+        // relayoutViews()
     }
 
 }
